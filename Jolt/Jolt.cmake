@@ -463,7 +463,7 @@ if ("${CMAKE_SYSTEM_NAME}" STREQUAL "Windows")
 endif()
 
 # Group source files
-source_group(TREE ${JOLT_PHYSICS_ROOT} FILES ${JOLT_PHYSICS_SRC_FILES})
+# source_group(TREE ${JOLT_PHYSICS_ROOT} FILES ${JOLT_PHYSICS_SRC_FILES})
 
 # Create Jolt lib
 add_library(Jolt ${JOLT_PHYSICS_SRC_FILES})
