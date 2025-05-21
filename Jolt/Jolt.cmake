@@ -518,7 +518,6 @@ if (NOT CPP_EXCEPTIONS_ENABLED)
 endif()
 
 # Set the debug/non-debug build flags
-target_compile_definitions(Jolt PUBLIC "$<$<CONFIG:Debug>:_DEBUG>")
 target_compile_definitions(Jolt PUBLIC "$<$<CONFIG:Release,Distribution,ReleaseASAN,ReleaseUBSAN,ReleaseTSAN,ReleaseCoverage>:NDEBUG>")
 
 # ASAN and TSAN should use the default allocators
